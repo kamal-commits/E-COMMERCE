@@ -20,7 +20,6 @@ exports.makePayment = (req, res) => {
     const resposeData = JSON.parse(response);
     const redirectUrl = resposeData.payment_request.longurl;
     console.log(redirectUrl);
-
     return res.json(redirectUrl);
   });
 };
